@@ -1,0 +1,18 @@
+libraries:
+- name: "django"
+  version: "1.4"
+
+- name: "tyanweibodata"
+  version: "1"
+
+handlers:
+- url: "/static"
+  static_dir: "path/to/tyanweibodata/static"
+
+name: tyanweibodata
+version: 1
+accesskey: ln5yjk41kl
+cron:
+- description: cron_test
+  url: fetch/start/
+  schedule: "*/1 * * * *"
